@@ -30,7 +30,11 @@ body{
 }
 
 a{
-    color: #0E445F;
+    color: #FFF;
+
+    &:hover{
+        color: #FFF;
+    }
 }
 
 .container-image-on-text{
@@ -229,7 +233,7 @@ p {
 
 .post-type-archive-galerie .breadcrumb a,
 .post-type-archive-galerie .breadcrumb span{
-    color: #0E445F;
+    color: #fff;
 }
 
 .swiper-pagination-bullet{
@@ -654,6 +658,11 @@ footer {
 .strate-hero.middle .strate-hero_inner{
     transform: translateX(0) translateY(-20%);
 }
+
+.strate-hero.large .strate-hero_inner{
+    transform: translateX(0) translateY(-20%);
+}
+
 .strate-hero{
     height: 90vh !important;
 
@@ -671,6 +680,10 @@ footer {
         left: 6vw;
         z-index: 10;
     }
+}
+
+.strate-hero.middle{
+   height: 60vh !important;
 }
 
 .strate-hero .strate-hero_inner p{
@@ -1039,10 +1052,67 @@ footer {
     }
 }
 
-#galerie{
-    padding-top: 180px;
+.post-type-archive-galerie footer{
+    margin-top: 0;
 }
 
+#galerie{
+    padding: 4vw;
+    padding-top: 200px;
+    padding-bottom: 0;
+
+    .container-intro-galerie{
+        padding: 15px;
+        position: relative;
+
+        &:after{
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            background-image: url('img/drop-down.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            right: 0;
+            bottom: 60px;
+        }
+    }
+}
+#galerie .container-border-left{
+    padding-bottom: 60px;
+    &:before{
+        content: "";
+        position: absolute;
+        left: -30px;
+        height: calc(100% + 20px);
+        background: rgba(255,255,255,.2);
+        width: 1px;
+        top: -20px;
+    }
+}
+#galerie .container-intro-galerie h1{
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 6vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 60px;
+}
+
+#galerie .text-galerie{
+    padding: 30px 0;
+}
+
+#galerie .text-galerie h4{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.filter-group{
+    border-bottom: 1px solid rgba(255,255,255, .2);
+    padding-bottom: 60px;
+    padding-top: 30px;
+}
 .filter-group label{
     font-size: 16px;
 }
@@ -1051,11 +1121,9 @@ footer {
     margin-right: 8px;
 }
 .filter-group h4{
-    font-size: 30px;
-    border-bottom: 1px solid #F7F7F7;
+    font-size: 22px;
     padding:  15px 0;
-    text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 .navigation.pagination{
@@ -1220,7 +1288,7 @@ footer {
     }
 
     .strate-hero.large{
-        height: 70vh;
+        height: 90vh;
     }
     .strate-hero.large h1{
         font-size: 34px;

@@ -86,38 +86,6 @@ function egp_custom_post_type() {
 
     // Product
 
-    $labels = array(
-        'name'                => __( 'Produits', 'lsd_lang'),
-        'singular_name'       => __( 'Produits', 'lsd_lang'),
-        'menu_name'           => __( 'Produits', 'lsd_lang'),
-        'all_items'           => __( 'Tous les types de Produits', 'lsd_lang'),
-        'view_item'           => __( 'Voir tous les types de Produits', 'lsd_lang'),
-        'add_new_item'        => __( 'Ajouter un Produit', 'lsd_lang'),
-        'add_new'             => __( 'Ajouter', 'lsd_lang'),
-        'edit_item'           => __( 'Editer un type la Produit', 'lsd_lang'),
-        'update_item'         => __( 'Modifier un type la Produit', 'lsd_lang'),
-        'not_found'           => __( 'Non trouvée', 'lsd_lang'),
-        'not_found_in_trash'  => __( 'Non trouvée dans la corbeille', 'lsd_lang'),
-    );
-
-    $args = array(
-        'label'               => __( 'Produit', 'lsd_lang'),
-        'description'         => __( 'Produits', 'lsd_lang'),
-        'labels'              => $labels,
-        'supports'            => array( 'title', 'author', 'revisions', 'custom-fields', 'page-attributes'),
-        'show_in_rest'        => false,
-        'menu_icon'           => 'dashicons-admin-home',
-        'hierarchical'        => true,
-        'public'              => true,
-        'publicly_queryable' => true,
-        'has_archive'         => false,
-        'rewrite' => array(
-            'with_front' => true
-        )
-    );
-
-    //register_post_type( 'product', $args );
-
 
     $labels = array(
         'name'                => __( 'Articles', 'lsd_lang'),
@@ -173,7 +141,7 @@ function egp_taxonomy() {
         array(
             'hierarchical' => true,
             'show_admin_column' => true,
-            'label' => __( 'Typologie de client', 'lsd_lang'),
+            'label' => __( 'Marques', 'lsd_lang'),
             'query_var' => true
         )
     );
@@ -184,18 +152,7 @@ function egp_taxonomy() {
         array(
             'hierarchical' => true,
             'show_admin_column' => true,
-            'label' => __( 'Typologie de produit', 'lsd_lang'),
-            'query_var' => true
-        )
-    );
-
-    register_taxonomy(
-        'typo_materiaux',
-        'galerie',
-        array(
-            'hierarchical' => true,
-            'show_admin_column' => true,
-            'label' => __( 'Typologie de matériaux', 'lsd_lang'),
+            'label' => __( 'Prestations', 'lsd_lang'),
             'query_var' => true
         )
     );

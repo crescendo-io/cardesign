@@ -12,7 +12,7 @@ $typo_materiaux = isset($_GET['typo_materiaux']) ? $_GET['typo_materiaux'] : '';
 // Arguments pour la WP_Query
 $args = array(
     'post_type' => 'galerie',
-    'posts_per_page' => 20,
+    'posts_per_page' => 9,
     'paged' => $paged,
     'tax_query' => array(
         'relation' => 'AND',
@@ -50,13 +50,30 @@ $galerie_query = new WP_Query($args);
 
 <div class="container-fluid" id="galerie">
     <div class="row">
-        <div class="col-sm-2">
+        <div class="col-sm-12">
+            <div class="container-intro-galerie">
+                <h1>NOS <br/>RÉALISATIONS</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
             <?php
             get_template_part('template-parts/filtre', 'galerie');
             ?>
         </div>
 
-        <div class="col-sm-10">
+        <div class="col-sm-9 container-border-left">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text-galerie">
+                        <h4>Découvrez nos réalisations</h4>
+                        <p>
+                            Découvrez l’ensemble de nos projets, afin de facilité votre navigation nous mettons à votre disposition un classement par marques de notre showroom.
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <?php if ($galerie_query->have_posts()) :
 

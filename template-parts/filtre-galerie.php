@@ -4,7 +4,7 @@
 <form method="GET" action="<?= get_site_url(); ?>/galerie/" class="filters-form">
     <!-- Checkbox pour typo_client -->
     <div class="filter-group">
-        <h4><?php _e('Clients', 'textdomain'); ?></h4>
+        <h4><?php _e('Choix par marques', 'textdomain'); ?></h4>
         <div class="list-group">
         <?php
         // Fonction récursive pour afficher les termes et leurs enfants
@@ -49,7 +49,7 @@
 
     <!-- Checkbox pour typo_product -->
     <div class="filter-group">
-        <h4><?php _e('Produits', 'textdomain'); ?></h4>
+        <h4><?php _e('Choix par prestation', 'textdomain'); ?></h4>
         <div class="list-group">
         <?php
         // Obtenir tous les termes parents de la taxonomy 'typo_product'
@@ -70,28 +70,6 @@
         </div>
     </div>
 
-    <!-- Checkbox pour typo_materiaux -->
-    <div class="filter-group">
-        <h4><?php _e('Matériels', 'textdomain'); ?></h4>
-        <div class="list-group">
-        <?php
-        // Obtenir tous les termes parents de la taxonomy 'typo_materiaux'
-        $typo_materiaux = get_terms(array(
-            'taxonomy' => 'typo_materiaux',
-            'parent' => 0,
-            'hide_empty' => false,
-        ));
 
-        // Sélectionner les termes cochés
-        $selected_materiaux = isset($_GET['typo_materiaux']) ? (array) $_GET['typo_materiaux'] : array();
 
-        // Afficher les termes et leurs enfants récursivement
-        if (!empty($typo_materiaux)) {
-            display_terms_recursive($typo_materiaux, $selected_materiaux, 'typo_materiaux');
-        }
-        ?>
-        </div>
-    </div>
-
-    <input type="submit" class="button" value="<?php _e('Filter', 'textdomain'); ?>" />
 </form>
