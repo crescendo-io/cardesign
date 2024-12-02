@@ -27,7 +27,7 @@ $(window).on('load',function(){
 $('.beforeAfter').beforeAfter({
     movable: true,
     clickMove: true,
-    position: 60,
+    position: 50,
     separatorColor: '#fafafa',
     bulletColor: '#fafafa',
     onMoveStart: function(e) {

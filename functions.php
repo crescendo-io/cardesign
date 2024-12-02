@@ -335,4 +335,5 @@ function custom_breadcrumb() {
     echo '</nav>';
 }
 
-
+add_image_size( 'relsize', 1920, 1080, true );
+add_image_size( 'crosslink', 900, 900, true );
