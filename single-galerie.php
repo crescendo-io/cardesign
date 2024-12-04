@@ -27,14 +27,22 @@ if($real_after){
         <?php if(isset($intro_image_url) && $intro_image_url) : ?>
         <img src="<?= $intro_image_url['url']; ?>" class="strate-hero_image" alt="" width="2560" height="1431">
         <?php endif; ?>
+
+        <?php if($real_title): ?>
         <div class="strate-hero_inner">
             <h1><?= $real_title; ?></h1>
             <h2><?= $real_subtitle; ?></h2>
         </div>
+        <?php else: ?>
+        <div class="strate-hero_inner">
+            <h1><?= get_the_title(); ?></h1>
+        </div>
+        <?php endif; ?>
     </div>
 
     <div class="strate marge-small"></div>
 
+    <?php if($real_title_intro || $real_text_intro) : ?>
     <div class="strate">
         <div class="container">
             <div class="row">
@@ -47,6 +55,7 @@ if($real_after){
             </div>
         </div>
     </div>
+    <?php endif; ?>
 
     <?php if(isset($real_before_url['url']) && $real_before_url['url'] && isset($real_after_url['url']) && $real_after_url['url']): ?>
     <div class="strate">
@@ -63,6 +72,10 @@ if($real_after){
     </div>
     <?php endif; ?>
 
+    <?php
+    $real_steps = get_field('real_steps');
+    if($real_steps):
+    ?>
     <div class="strate container-pushs-articles">
         <div class="container">
             <div class="row">
@@ -73,11 +86,6 @@ if($real_after){
                 </div>
             </div>
 
-            <?php
-                $real_steps = get_field('real_steps');
-
-                if($real_steps):
-            ?>
             <div class="row steps-content">
 
                 <?php
@@ -101,9 +109,9 @@ if($real_after){
 
                 <?php endforeach; ?>
             </div>
-            <?php endif; ?>
         </div>
     </div>
+    <?php endif; ?>
 
 
     <div class="strate container-slider-cards ">
@@ -122,7 +130,7 @@ if($real_after){
 
             </div>
         </div>
-        <div class="swiper" data-itemsdesk="4.2" data-itemstablet="3" data-itemsmobile="1.3">
+        <div class="swiper" data-itemsdesk="3.4" data-itemstablet="3" data-itemsmobile="1.3">
             <div class="swiper-wrapper">
                 <?php
                 // ID du post courant (par exemple, dans une boucle single)
@@ -131,7 +139,7 @@ if($real_after){
                 // Configuration de la requête WP_Query
                 $args = array(
                     'post_type'      => 'galerie',
-                    'posts_per_page' => 4,
+                    'posts_per_page' => 5,
                     'post__not_in'   => array($current_post_id),
                     'orderby'        => 'rand',
                     'tax_query'      => array(

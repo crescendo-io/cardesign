@@ -146,6 +146,7 @@ p {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
     position: absolute;
     left: 0;
+    pointer-events: none;
     top: 0;
     z-index: 5;
 }
@@ -155,6 +156,41 @@ p {
 .container-slider-cards .swiper .card-slide .text{
     z-index: 8;
 }
+
+.popin-contact li strong{
+    display: block;
+}
+
+.popin-contact iframe{
+    height: 40vh;
+}
+.popin-contact{
+    background: #555;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 600;
+    padding: 6vw;
+    display: none;
+
+    .close{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    &:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,.7);
+    }
+}
+
 
 .container-slider-cards .swiper .card-slide .text:after{
     content: 'En savoir +';

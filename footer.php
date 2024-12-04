@@ -1,6 +1,6 @@
 <div class="strate container-image-on-text  img-dark">
 
-    <img src="https://harmony-builder.code/wp-content/uploads/2024/05/hero-1.png" alt="" width="1438" height="1002" loading="lazy">
+    <img src="<?= get_stylesheet_directory_uri(); ?>/images/footer.jpeg" alt="" width="1438" height="1002" loading="lazy">
 
     <div class="container">
         <div class="row">

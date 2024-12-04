@@ -24,6 +24,20 @@ $(window).on('load',function(){
 });
 
 
+$('.popin-contact .close').click(function(){
+    $('.popin-contact').slideUp();
+});
+
+$('a').click(function(event){
+   var el = $(this);
+
+   if(el.attr('href') == "#devis"){
+       event.preventDefault();
+       $('.popin-contact').slideDown();
+   }
+});
+
+
 $('.beforeAfter').beforeAfter({
     movable: true,
     clickMove: true,

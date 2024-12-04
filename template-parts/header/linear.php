@@ -2,6 +2,48 @@
     $menu = get_field('menu_items', 'option');
 ?>
 
+<div class="popin-contact">
+
+    <button class="close">
+        <img src="<?= get_stylesheet_directory_uri(); ?>/images/cross.svg" alt="Fermeture de la popin de contact">
+    </button>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Nous contacter</h2>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>Atelier</strong>
+                            13 Rue Lavoisier Ozoir la Ferrière 77330 PARIS
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Siège social</strong>
+                            88 Avenue des Ternes 17ème
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Téléphone</strong>
+                            01 64 40 20 00
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Email</strong>
+                            car-design@orange.fr
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.7239116427027!2d2.6819807156711715!3d48.768068479278774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e607515bd24ff5%3A0xe1d431431a1469de!2sCar%20Design%20Styling!5e0!3m2!1sfr!2sfr!4v1606619747911!5m2!1sfr!2sfr" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="header">
     <div class="container-fluid">
@@ -78,7 +120,7 @@
                 </ul>
             </div>
             <div class="col-sm-4 text-right">
-                <a href="<?= get_site_url(); ?>/demande-de-devis/" class="button">Demander un devis</a>
+                <a href="#devis" class="button">Demander un devis</a>
             </div>
         </div>
     </div>
