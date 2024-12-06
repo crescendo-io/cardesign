@@ -1500,6 +1500,15 @@ body {
        }
     }
 
+
+
+    .strate-hero .strate-hero_inner h1{
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 800;
+        line-height: 50px;
+    }
+
     #galerie .container-intro-galerie{
         padding-top: 90px;
     }
@@ -1548,8 +1557,8 @@ body {
         height: 90vh;
     }
     .strate-hero.large h1{
-        font-size: 34px;
-        line-height: 36px;
+        font-size: 50px;
+        line-height: 50px;
     }
 
     .introduction-product{
