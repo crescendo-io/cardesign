@@ -129,6 +129,12 @@
                         </a>
                     </li>
 
+                    <li class="visible-xs">
+                        <a href="#devis">
+                            Contact
+                        </a>
+                    </li>
+
                 </ul>
             </div>
             <div class="col-sm-4 text-right">
