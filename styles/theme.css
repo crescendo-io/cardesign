@@ -530,6 +530,9 @@ footer {
     color: #0E445F;
 }
 
+.swiper-button-next, .swiper-button-prev{
+    display: none !important;
+}
 
 .header{
     position: fixed;
