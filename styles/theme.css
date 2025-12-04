@@ -130,7 +130,7 @@ p {
     font-size: 3vw;
 }
 .strate-hero.dark:before{
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .container-slider-cards .swiper .card-slide img{
@@ -534,16 +534,17 @@ footer {
 .header{
     position: fixed;
     z-index: 300;
-    max-width: 2000px;
     width: 100%;
     left: 50%;
     padding: 0 30px;
-    padding-bottom: 1vw;
-    padding-top: 1vw;
+    padding-bottom: .5vw;
+    padding-top: .5vw;
     transform: translateX(-50%);
     border-bottom: 1px solid rgba(255,255,255,0.2);
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.5564819677871149) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.3) 100%);
+    backdrop-filter: blur(4px);
+    border-radius: 0 0 30px 30px;
 
     .button{
         top: 50%;
@@ -674,7 +675,7 @@ footer {
 
 .header .main-menu li{
     display: inline-block;
-    padding: 15px;
+    padding: 10px 15px;
     font-family: "Poppins", serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -687,6 +688,14 @@ footer {
 
 .header .main-menu li a{
     color: #fff;
+}
+
+.header .main-menu li:hover{
+    border-bottom: 1px solid #FFF;
+}
+
+.header .main-menu li a:hover{
+    text-decoration: none;
 }
 
 
@@ -755,12 +764,13 @@ footer {
         width: 25vw;
         height: 25vw;
         position: absolute;
-        background: url(img/picto-white.svg);
+        background: url('img/picto-white.svg');
         background-size: contain;
         background-repeat: no-repeat;
         bottom: 0;
     }
 }
+
 
 .container-hero-slider .swiper-button-next,
 .container-hero-slider .swiper-button-prev{

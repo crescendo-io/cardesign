@@ -58,7 +58,7 @@
 </div>
 
 <div class="header">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-sm-2">
                 <div class="logo">
@@ -123,11 +123,6 @@
                     <?php
                     endforeach;
                     ?>
-                    <li>
-                        <a href="<?= get_site_url(); ?>/galerie/">
-                            Galerie
-                        </a>
-                    </li>
 
                     <li class="visible-xs">
                         <a href="#devis">
