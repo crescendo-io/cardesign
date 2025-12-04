@@ -534,6 +534,8 @@ footer {
     display: none !important;
 }
 
+
+
 .header{
     position: fixed;
     z-index: 300;
@@ -1205,16 +1207,31 @@ footer {
 }
 
 
-.cky-btn-accept{
-    background: #0E445F !important;
-    border-color: #0E445F !important;
+.cky-btn-accept {
+    background: #FF0000 !important;
+    border: 2px solid #FF0000 !important;
+    border-radius: 30px !important;
+}
+
+.cky-consent-container .cky-consent-bar{
+    background: #000 !important;
+    border: 0 !important;
+}
+
+.cky-notice .cky-title{
+    color: #FFF !important;
+}
+
+.cky-consent-bar .cky-notice-des p, .cky-gpc-wrapper .cky-gpc-desc p, .cky-preference-body-wrapper .cky-preference-content-wrapper p, .cky-accordion-header-wrapper .cky-accordion-header-des p, .cky-cookie-des-table li div:last-child p{
+    color: #FFF !important;
 }
 
 .cky-btn-reject,
 .cky-btn-customize,
 .cky-btn-preferences{
-    color: #0E445F !important;
-    border-color: #0E445F !important;
+    color: #fff !important;
+    border-color: #FF0000 !important;
+    border-radius: 30px !important;
 }
 
 .cky-btn-revisit-wrapper{
