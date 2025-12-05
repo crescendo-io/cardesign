@@ -11,7 +11,7 @@
 
 
                     <div class="container-buttons">
-                        <a href="https://contact.com" target="" class="button primary ">
+                        <a href="#devis" target="" class="button primary ">
                             Contactez-nous        </a>
                     </div>
 
