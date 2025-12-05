@@ -1070,6 +1070,12 @@ footer {
     }
 }
 
+
+.header .logo img{
+
+        max-width: 147px;
+
+}
 .filter-group label{
     display: block;
 }
