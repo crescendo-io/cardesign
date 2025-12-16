@@ -267,14 +267,14 @@ p {
 }
 
 .swiper-pagination-bullet{
-    background: #0E445F;
+    background: #fff;
     transition: .3s;
     opacity: 1;
     margin-top: 3vw;
     border-radius: 5px;
 }
 .swiper-pagination-bullet-active{
-    background: #F0B542;
+    background: #FF0000;
     width: 60px;
     border-radius: 5px;
     transition: .3s;
