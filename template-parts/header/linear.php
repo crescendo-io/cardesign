@@ -81,7 +81,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-7">
                 <div class="burger-menu">
                     <div class="barre"></div>
                     <div class="barre"></div>
@@ -146,7 +146,7 @@
 
                 </ul>
             </div>
-            <div class="col-sm-4 text-right">
+            <div class="col-sm-3 text-right">
                 <a href="#devis" class="button">Demander un devis</a>
             </div>
         </div>
